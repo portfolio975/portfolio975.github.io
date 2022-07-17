@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオのサイトです。模写による制作物を閲覧できます。">
+  <title>Practice</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+  <div class="practice">
+    <h1>PRACTICE</h1>
+    <h2>バナー広告を模写した制作物(Photoshop使用)</h2>
+    <div class="banner-area">
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/banner1.jpg" alt="バナー広告の模写画像1" id="op1">
+          <p>セール広告</p>
+        </div>
+      </div>
+
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/banner2.jpg" alt="バナー広告の模写画像2" id="op2">
+          <p>ドリンク広告</p>
+        </div>
+      </div>
+
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/banner3.jpg" alt="バナー広告の模写画像3" id="op3">
+          <p>英会話広告</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>チラシを模写した制作物(Illustrator使用)</h2>
+    <div class="banner-area">
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/flyer1.jpg" alt="チラシの模写画像1" id="op4">
+          <p>不動産チラシ</p>
+        </div>
+      </div>
+
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/flyer2.jpg" alt="チラシの模写画像2" id="op5">
+          <p>セミナーチラシ</p>
+        </div>
+      </div>
+
+      <div class="banner-group">
+        <div class="banner-info">
+          <img src="images/flyer3.jpg" alt="チラシの模写画像3" id="op6">
+          <p>お店の開店チラシ</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal-window-practice -->
+  <div id="mask" class="container hidden"></div>
+
+  <div id="batu" class="hidden">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <div id="pra1" class="hidden container">
+    <img src="images/banner1.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">セール広告</p>
+  </div>
+
+  <div id="pra2" class="hidden container">
+    <img src="images/banner2.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">ドリンク広告</p>
+  </div>
+
+  <div id="pra3" class="hidden container">
+    <img src="images/banner3.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">英会話広告</p>
+  </div>
+
+  <div id="pra4" class="hidden container">
+    <img src="images/flyer1.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">不動産チラシ</p>
+  </div>
+
+  <div id="pra5" class="hidden container">
+    <img src="images/flyer2.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">セミナーチラシ</p>
+  </div>
+
+  <div id="pra6" class="hidden container">
+    <img src="images/flyer3.jpg" alt="banner1番目の画像" class="practice-pic">
+    <p class="pic-title">お店の開店チラシ</p>
+  </div>
+
+
+  <script src="js/sub.js"></script>
+</body>
+</html>

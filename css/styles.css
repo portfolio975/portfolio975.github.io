@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+/* 共通部分 */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", "YuGothic", "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ヘッダー */
+header {
+  background-image: url(../images/top-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 120vh;
+}
+
+.pc-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 36px;
+}
+
+.pc-nav li {
+  margin-right: 48px;
+}
+
+.pc-nav a {
+  font-size: 1.2rem;
+  color: #019fa2;
+}
+
+.pc-nav a:hover {
+  cursor: pointer;
+  color: #03eaee;
+  transition-duration: 0.3s;
+}
+
+.top-title h1 {
+  padding-top: 9%;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: normal;
+  color: #019fa2;
+}
+
+
+/* ABOUT */
+.about {
+  margin-bottom: 100px;
+}
+
+.area-title {
+  padding-top: 120px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #019fa2;
+}
+
+.about p {
+  text-align: center;
+  padding-top: 36px;
+  line-height: 36px;
+  font-size: 1.1rem;
+}
+
+/* WORKS */
+.works {
+  margin-bottom: 100px;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top: 36px;
+  width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 100px 30px;
+  justify-content: center;
+}
+
+.work-info:hover {
+  opacity: 0.8;
+  transition-duration: .3s;
+  cursor: pointer;
+}
+
+.pic img {
+  height: 200px;
+  border: 1px solid #333;
+  box-shadow: 8px 5px 5px #333;
+}
+
+.pic p {
+  text-align: center;
+}
+
+.practice a {
+  display: block;
+  background: #019fa2;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  width: 300px;
+  margin: 64px auto;
+  border-radius: 4px;
+}
+
+.practice a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition-duration: .3s;
+}
+
+/* modal window */
+#mask {
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#modal1, #modal2, #modal3,
+#modal4, #modal5, #modal6 {
+  background: ghostwhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: auto;
+  height: 100vh;
+  width: 1100px;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+#close {
+  position: fixed;
+  top: 2px;
+  right: 422px;
+  font-size: 2rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.site-pic {
+  width: 900px;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 3px 3px 5px #333;
+}
+
+.site-name {
+  padding-top: 8px;
+}
+
+.btn {
+  margin: 6px auto 48px;
+}
+
+.btn a {
+  color: #fff;
+  display: block;
+  width: 160px;
+  padding: 10px 0;
+  background: #019fa2;
+  font-weight: bold;
+  border-radius: 4px;
+  margin: 6px auto 36px;
+}
+
+.btn a:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition-duration: .3s;
+}
+
+.site-info {
+  text-align: left;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.site-info h1 {
+  font-size: 0.875rem;
+}
+
+.site-info p {
+  font-size: 0.875rem;
+  padding-bottom: 26px;
+}
+
+.hidden {
+  display: none;
+}
+
+#mask.hidden {
+  display: none;
+}
+
+
+#close.hidden {
+  display: none;
+}
+
+/* practice */
+.practice {
+  margin-bottom: 64px;
+}
+
+.practice h1 {
+  padding-top: 64px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  color: #019fa2;
+}
+
+.practice h2 {
+  text-align: center;
+  margin-top: 64px;
+  font-size: 1.2rem;
+}
+
+.banner-area {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 26px;
+  width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 100px 30px;
+  justify-content: center;
+}
+
+.banner-group:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition-duration: .3s;
+}
+
+/* modal-window-practice */
+#batu {
+  position: fixed;
+  top: 2px;
+  right: 322px;
+  font-size: 2rem;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#batu.hidden {
+  display: none;
+}
+
+#pra1, #pra2, #pra3,
+#pra4, #pra5, #pra6 {
+  background: ghostwhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  overflow: auto;
+  height: 100vh;
+  width: 1300px;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.practice-pic {
+  width: 1100px;
+  border: 1px solid rgb(201, 201, 201);
+  box-shadow: 3px 3px 5px #333;
+}
+
+.pic-title {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+/* SKILL */
+.skill {
+  width: 1000px;
+  margin: 0 auto 200px;
+}
+
+.skill-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.skill-info {
+  width: 47%;
+}
+
+.skill-info h1 {
+  font-size: 1.2rem;
+  margin-top: 64px;
+  color: #019fa2;
+}
+
+.skill-info p {
+  font-size: 0.875rem;
+  padding-top: 6px;
+}
+
+/* フッター */
+footer {
+  height: 160px;
+  color: #fff;
+  background: #019fa2;
+  text-align: center;
+}
+
+footer p {
+  line-height: 160px;
+}
+
+/* メディアクエリー */
+

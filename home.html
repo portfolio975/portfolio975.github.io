@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ポートフォリオのサイトです。">
+  <title>Portfolio</title>
+  <!-- css -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <link rel="stylesheet" href="css/common.css">
+  <!-- script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+<!-- ヘッダー -->
+<div class="sp-header">
+  <i class="fas fa-bars" id="akeru"></i>
+  <div class="top-title">
+    <h1>PORTFOLIO</h1>
+  </div>
+</div>
+
+<div class="overlay">
+  <i class="fas fa-times" id="tojiru"></i>
+  <div class="sp-nav">
+    <ul>
+      <li><a href="#about" id="ab">ABOUT</a></li>
+      <li><a href="#works" id="wo">WORKS</a></li>
+      <li><a href="#skill" id="sk">SKILL</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="pc-header">
+  <div class="pc-nav">
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#works">WORKS</a></li>
+      <li><a href="#skill">SKILL</a></li>
+    </ul>
+  </div>
+  <div class="top-title">
+    <h1>PORTFOLIO</h1>
+  </div>
+</div>
+
+<div class="top-btn">
+  <i class="fas fa-caret-up"></i>
+</div>
+
+<!-- ABOUT -->
+<div class="about wrapper" id="about">
+  <h1 class="area-title">ABOUT</h1>
+  <p>
+    こちらはポートフォリオのサイトとなります。
+    WORKSでは制作したWEBサイトの紹介、<br>
+    SKILLでは現在使用できる(勉強中も含む)
+    各ソフトのスキル説明となっています。
+  </p>
+</div>
+
+<!-- WORKS -->
+<div class="works" id="works">
+  <h1 class="area-title">WORKS</h1>
+  <div class="pic">
+    <div class="work-info" id="open1">
+      <img src="images/work1.png" alt="work1番目の画像">
+      <p>
+        キャンプ場サイト<br>
+        (架空のサイト)
+      </p>
+    </div>
+    <div class="work-info" id="open2">
+      <img src="images/work2.png" alt="work2番目の画像">
+      <p>
+        フォトギャラリー<br>
+        (架空のサイト)
+      </p>
+    </div>
+    <div class="work-info" id="open3">
+      <img src="images/work3.png" alt="work3番目の画像">
+      <p>
+        コーポレートサイト<br>
+        (架空のサイト)
+      </p>
+    </div>
+    <div class="work-info" id="open4">
+      <img src="images/work4.png" alt="work4番目の画像">
+      <p>
+        服の通販サイト<br>
+        (架空のサイト)
+      </p>
+    </div>
+    <div class="work-info" id="open5">
+      <img src="images/work5.png" alt="work5番目の画像">
+      <p>
+        アプリ紹介サイト<br>
+        (架空のサイト)
+      </p>
+    </div>
+    <div class="work-info" id="open6">
+      <img src="images/work6.png" alt="work6番目の画像">
+      <p>
+        ポートフォリオサイト<br>
+        (こちらのサイト)
+      </p>
+    </div>
+  </div>
+  <div class="practice">
+    <a href="practice.html" target="_blank">模写による制作物<br>(Photoshop,Illustratorを使用)</a>
+  </div>
+</div>
+
+<!-- modal window -->
+<div id="mask" class="hidden"></div>
+
+<div id="close" class="hidden">
+  <i class="fas fa-times"></i>
+</div>
+
+<div id="modal1" class="hidden container">
+  <img src="images/site1.jpg" alt="site1番目の画像" class="site-pic">
+  <p class="site-name">キャンプ場サイト(架空のサイト)</p>
+
+  <div class="btn">
+    <a href="camp-site/index.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>7日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      トップページのみの制作となります。<br>
+      キャンプ場を利用したい人が、施設や営業時間等を確認できるサイトを仮定して制作しました。<br>
+      昨今のキャンプブームにより、キャンプをしてみたいと思っている方がターゲットです。<br>
+      サイトカラーを焚き火を連想する茶色やオレンジにしました。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      キャンプ場内の雰囲気が一目で伝わるように、TOP画像に3枚の場内画像を用意し、<br>
+      スライドを実装することで、一番最初に目に入るようにしました。<br>
+      トップへ誘導するボタンを常時右下に配置することで、ページ途中や終盤でもトップへ戻れるようになっています。<br>
+      スマートフォンの画面では、ナビゲーションメニューをハンバーガーメニューにまとめました。<br>
+      ハンバーガーメニューをクリックすると、メニューが上からふわっと表示されるようになっています。
+    </p>
+  </div>
+</div>
+
+<div id="modal2" class="hidden container">
+
+  <img src="images/site2.jpg" alt="site2番目の画像" class="site-pic">
+  <p class="site-name">フォトギャラリー(架空のサイト)</p>
+
+  <div class="btn">
+    <a href="photo-gallery/index.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>3日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      フォトギャラリーのページのみの制作となります。<br>
+      猫や動物好きな方向けに、写真を閲覧できるサイトを制作しました。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      PC画面では写真を3列の配置になるように、スマートフォン画面では1列で表示されるように、<br>グリッドレイアウトを使用してまとめています。<br>
+      どの写真をホバーしたか分かりやすくするために、
+      写真上をホバーすると拡大できるようにしました。
+    </p>
+  </div>
+</div>
+
+<div id="modal3" class="hidden container">
+
+  <img src="images/site3.jpg" alt="site3番目の画像" class="site-pic">
+  <p class="site-name">コーポレートサイト(架空のサイト)</p>
+
+  <div class="btn">
+    <a href="company/index.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>7日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      企業の一般的なコーポレートサイトを仮定して制作しました。<br>
+      企業情報やニュースを閲覧したい方をターゲットにしています。<br>
+      会社の誠実さやまじめな印象を持たせるために、サイトのイメージカラーを水色としています。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      サイト内のページは、トップ、ニュース、会社概要の3ページ構成になっており、各項目からのページ偏移が可能です。
+    </p>
+  </div>
+</div>
+
+<div id="modal4" class="hidden container">
+
+  <img src="images/site4.jpg" alt="site4番目の画像" class="site-pic">
+  <p class="site-name">服の通販サイト(架空のサイト)</p>
+
+  <div class="btn">
+    <a href="clothes-shop/index.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>7日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      トップページのみの制作となります。<br>
+      服に興味がある大人女性をターゲットとし、トップス、ボトムス、帽子など、<br>
+      様々なアイテムを取り揃えている通販のセレクトショップを想定してサイトを制作しました。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      トップ画像は4枚用意し、右矢印ボタンをクリックすると、2枚目、3枚目と画像がスライドしていきます。<br>
+      人気ランキングの項目では、トップス、ボトムス、帽子、靴の各アイテムをタブメニューとすることで、<br>
+      ページを固定した状態でアイテムを閲覧できるようにしました。<br>
+      スマートフォン画面ではハンバーガーメニューを配置し、ログインや各アイテムのページに飛べるようなナビゲーションメニューにしています。
+    </p>
+  </div>
+</div>
+
+<div id="modal5" class="hidden container">
+
+  <img src="images/site5.png" alt="site5番目の画像" class="site-pic">
+  <p class="site-name">アプリ紹介サイト(架空のサイト)</p>
+
+  <div class="btn">
+    <a href="app-site/index.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>3日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      スマホアプリを紹介するサイトを仮定して制作しました。<br>
+      アプリを使ってみたい方、アプリの特徴を知りたい方がターゲットです。<br>
+      サイトのイメージカラーはアプリの安全をイメージした緑を基調としています。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      「アプリの特徴」や「はじめかた」の項目では、要素がスクロールした特定の領域で、
+      アニメーションが実行できるようにコーディングしました。(PC画面のみ)<br>
+      FAQの項目では、＋や×ボタンをクリックすると、回答を表示・非表示することができます。
+    </p>
+  </div>
+</div>
+
+<div id="modal6" class="hidden container">
+
+  <img src="images/site6.jpg" alt="site6番目の画像" class="site-pic">
+  <p class="site-name">ポートフォリオサイト(こちらのサイト)</p>
+
+  <div class="btn">
+    <a href="home.html" target="_blank">サイトへ →</a>
+  </div>
+
+  <div class="site-info">
+    <h1>担当部分</h1>
+    <p>企画／デザイン／コーディング</p>
+    <h1>制作期間</h1>
+    <p>7日</p>
+    <h1>コンセプト・ターゲット</h1>
+    <p>
+      就職活動用に制作したポートフォリオサイトです。<br>
+      制作するにあたり、様々なポートフォリオサイトを拝見し、
+      載せる内容や要素の配置等を参考にしながら自分なりに制作してみました。
+    </p>
+    <h1>コメント</h1>
+    <p>
+      ペンギンが好きなのでTOP画像にペンギンの画像を配置し、ペンギンを連想する水色をサイトカラーにすることで、統一感が出るようにしました。<br>
+      WORKSやSKILLの項目では、情報が見やすくなるように、各要素をコンパクトにまとめて配置しました。<br>
+      ページ偏移を少なくしたかったので、WORKSやPRACTICEに配置している画像をクリックすると、ページ内スクロールで情報が見られるようになっています。
+    </p>
+  </div>
+</div>
+
+<!-- SKILL -->
+<div class="skill" id="skill">
+  <h1 class="area-title">SKILL</h1>
+
+  <div class="skill-group">
+    <div class="skill-info">
+      <h1>HTML5／CSS3</h1>
+      <p>
+        基本的な操作に加え、Flexboxやレスポンシブデザインの記述ができます。<br>
+        エディタは「Visual Studio Code」を使用しています。
+      </p>
+    </div>
+    <div class="skill-info">
+      <h1>JavaScript</h1>
+      <p>
+        Webサイトに部分的な動きをつけることができます。(jQuery使用可)
+      </p>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <div class="skill-info">
+      <h1>Photoshop</h1>
+      <p>
+        基本的なツールを利用して、写真加工やバナー制作ができます。<br>
+        Webサイトで使用する画像や写真の切り抜き、加工もPhotoshopで行っています。
+      </p>
+    </div>
+    <div class="skill-info">
+      <h1>Illustrator</h1>
+      <p>
+        基本的な操作ができます。バナーやチラシを主に制作できます。
+      </p>
+    </div>
+  </div>
+
+  <div class="skill-group">
+    <div class="skill-info">
+      <h1>Premirepro</h1>
+      <p>
+        カット編集、テロップ入れなどを用いた簡単な動画編集ができます。
+      </p>
+    </div>
+    <div class="skill-info">
+      <h1>PHP</h1>
+      <p>
+        現在勉強中で、将来的にお問い合わせフォームの実装やECサイトの制作ができるようになりたいです。
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- フッター -->
+<footer>
+  <p>2022 Portfolio</p>
+</footer>
+
+
+
+  <script src="js/main.js"></script>
+</body>
+</html>
